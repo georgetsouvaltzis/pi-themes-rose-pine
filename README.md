@@ -1,10 +1,9 @@
 # pi-themes-rose-pine
 
-Rosé Pine theme pack for [pi](https://github.com/badlogic/pi-mono), including all 3 official variants:
+Rosé Pine theme pack for [pi](https://github.com/badlogic/pi-mono).
 
-- `rose-pine`
-- `rose-pine-moon`
-- `rose-pine-dawn`
+- npm: https://www.npmjs.com/package/pi-themes-rose-pine
+- included themes: `rose-pine`, `rose-pine-moon`, `rose-pine-dawn`
 
 ## Install
 
@@ -12,21 +11,16 @@ Rosé Pine theme pack for [pi](https://github.com/badlogic/pi-mono), including a
 pi install npm:pi-themes-rose-pine
 ```
 
-Or local development:
+## Use
 
-```bash
-pi install ./pi-themes-rose-pine
-```
+1. Restart `pi` (if already running).
+2. Open `/settings`.
+3. Select one of:
+   - `rose-pine`
+   - `rose-pine-moon`
+   - `rose-pine-dawn`
 
-## Select a theme
-
-In pi, open `/settings` and set theme to one of:
-
-- `rose-pine`
-- `rose-pine-moon`
-- `rose-pine-dawn`
-
-Or in `settings.json`:
+Or set theme in settings JSON:
 
 ```json
 {
@@ -34,34 +28,17 @@ Or in `settings.json`:
 }
 ```
 
-## Package structure
+## Uninstall
+
+```bash
+pi remove npm:pi-themes-rose-pine
+```
+
+## Package layout
 
 ```text
 themes/
   rose-pine.json
   rose-pine-moon.json
   rose-pine-dawn.json
-```
-
-This package exposes themes via:
-
-```json
-{
-  "pi": {
-    "themes": ["./themes"]
-  }
-}
-```
-
-## Publish
-
-```bash
-npm login
-npm publish
-```
-
-If using a scoped package:
-
-```bash
-npm publish --access public
 ```
