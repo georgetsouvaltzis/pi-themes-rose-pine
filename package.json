@@ -1,0 +1,22 @@
+{
+  "name": "pi-themes-rose-pine",
+  "version": "0.1.0",
+  "description": "Rosé Pine themes for pi (main, moon, dawn)",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-theme",
+    "rose-pine",
+    "theme"
+  ],
+  "files": [
+    "themes",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "themes": [
+      "./themes"
+    ]
+  }
+}
